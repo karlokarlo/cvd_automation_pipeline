@@ -1,0 +1,33 @@
+id: CVE-1337-1337
+
+info:
+  name: Return positive for 200 - TEST
+  severity: high
+  description: General test which returns positive result for an online site
+  remediation: None
+  classification:
+    cvss-metrics: CVSS:2.0/AV:N/AC:L/Au:N/C:P/I:N/A:N
+    cvss-score: 5
+    cve-id: CVE-0000-0000
+    cwe-id: NVD-CWE-Other
+    epss-score: 0.09258
+    epss-percentile: 0.94099
+    cpe: cpe:2.3:a:microsoft:internet_information_server:3.0:*:*:*:*:*:*:*
+  metadata:
+    max-request: 2
+    vendor: none
+    product: csr-site
+  tags: 
+    - cve
+    - cve1337
+    - test
+
+# True for an active web server
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers:
+      - type: status
+        status:
+          - 200
