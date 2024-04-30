@@ -1,3 +1,5 @@
+This project leverages Apache Airflow to automate the scan-notify phase of Coordinated Vulnderability Disclosure (CVD), ensuring that vulnerabilities are communicated and handled efficiently and securely.
+
 # Airflow Docker Setup Guide
 
 This guide provides instructions on setting up Docker containers for running Apache Airflow and the DAGs defined in this repository.
